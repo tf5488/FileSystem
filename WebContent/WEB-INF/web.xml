@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <welcome-file-list>
+    <welcome-file>NewIndex.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>FileTreeServlet</servlet-name>
+  	<servlet-class>servlet.FileTreeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RoolBackServlet</servlet-name>
+  	<servlet-class>servlet.RoolBackServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>FileTreeServlet</servlet-name>
+  	<url-pattern>/FileTreeServlet</url-pattern>
+  </servlet-mapping>
+ <servlet-mapping>
+  	<servlet-name>RoolBackServlet</servlet-name>
+  	<url-pattern>/RoolBackServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
